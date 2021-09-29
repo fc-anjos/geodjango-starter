@@ -10,11 +10,11 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update  \
-    && apt-get -y install netcat gcc postgresql \
+    && apt-get install -y install netcat gcc postgresql \
     && apt-get clean
 
 RUN apt-get update \
-    && apt-get -y binutils libproj-dev gdal-bin python-gdal pyhon3-gdal \
+    && apt-get install -y binutils libproj-dev gdal-bin python-gdal pyhon3-gdal \
     && apt-get clean
 
 RUN pip install --upgrade pip
