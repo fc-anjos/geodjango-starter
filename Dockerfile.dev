@@ -14,7 +14,7 @@ RUN apt-get update  \
     && apt-get clean
 
 RUN apt-get update \
-    && apt-get install -y binutils libproj-dev gdal-bin python-gdal pyhon3-gdal \
+    && apt-get install -y binutils libproj-dev gdal-bin python-gdal python3-gdal \
     && apt-get clean
 
 RUN pip install --upgrade pip
